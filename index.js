@@ -2,7 +2,7 @@
 
 const sh = require('shell-exec')
 
-module.exports = function (port, method = 'tcp', signal = 'SIGKILL') {
+module.exports = function (port, method = 'tcp', signal = 'SIGTERM') {
   port = Number.parseInt(port)
   signal = mapSignalToNumber(signal)
 
